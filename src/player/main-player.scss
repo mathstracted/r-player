@@ -1,0 +1,18 @@
+.layer {
+    transition: all 0.5s;
+}
+
+.layer-enter {
+    transform: translate(0, 100px);
+    filter: blur(3px)
+}
+
+.layer-enter-active {
+    transform: translate(0, 0);
+    filter: blur(0px)
+
+}
+
+.layer-exit-active {
+    @extend .layer-enter
+}
